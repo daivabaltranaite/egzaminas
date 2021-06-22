@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: 'Exo', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 4px 31px -19px #000000;
+    background-color: #ffffff;
+}
+
+.title {
+    display: block;
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.logo {
+    height: 60px;
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc((100% / 3) - 30px);
+    margin: 0 15px 15px 0;
+    border: 4px solid white;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 4px 31px -29px #000000;
+}
+
+@media all and (max-width: 480px) {
+    .card {
+        width: calc(100% - 15px);
+    }
+}
+
+@media all and (max-width: 760px) and (min-width: 480px) {
+    .card {
+        width: calc((100% / 2) - 30px);
+    }
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-content {
+    padding: 10px;
+    color: #697070;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.card-title {
+    color: #6eb92b;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    border-bottom: 1px solid #697070;
+    margin: 10px 0;
+}
+
+.stars,
+.comments {
+    display: flex;
+    align-items: center;
+    color: #6eb92b;
+}
+
+.stars-count {
+    margin-right: 6px;
+}
+
+.comments-count {
+    margin-left: 6px;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: 60px;
+}
+
+.form-title {
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.form-subtitle {
+    margin-top: 10px;
+    color: #697070;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.form-button {
+    background-color: #6eb92b;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field input {
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #697070;
+    outline: 0;
+}
+
+.form-field label {
+    color: #697070;
+    margin-bottom: 4px;
+}
+
+footer {
+    margin: 10px 0;
+}
+
+.success {
+    line-height: 50px;
+    background-color: #6eb92b;
+    color: #ffffff;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
